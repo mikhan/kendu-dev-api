@@ -1,0 +1,6 @@
+in: path
+name: usuarioId
+schema:
+  type: integer
+required: true
+description: Numeric ID of the user to get

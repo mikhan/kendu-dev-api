@@ -1,0 +1,20 @@
+{
+  "name": "@kendu/dev-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@apidevtools/json-schema-ref-parser": "^9.0.1",
+    "@types/node": "^14.0.5"
+  },
+  "dependencies": {
+    "@types/jsonpath": "^0.2.0",
+    "jsonpath": "^1.0.2"
+  },
+  "description": ""
+}

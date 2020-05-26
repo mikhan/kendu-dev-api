@@ -1,0 +1,13 @@
+type: object
+properties:
+  detail:
+    type: string
+    description: A human-readable description of the specific error
+  type:
+    $ref: 'ErrorType.yml'
+  title:
+    type: string
+    description: A short, human-readable title for the general error type
+  status:
+    type: integer
+    description: Conveying the HTTP status code

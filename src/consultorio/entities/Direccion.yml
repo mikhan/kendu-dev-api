@@ -1,0 +1,8 @@
+type: object
+properties:
+  id:
+    type: integer
+    example: 1
+  calle:
+    type: string
+    example: Av. Revolución

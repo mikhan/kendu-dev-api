@@ -1,0 +1,5 @@
+description: Solicitud incorrecta
+content:
+  application/problem+json:
+    schema:
+      $ref: '../schemas/Error.yml'

@@ -1,0 +1,28 @@
+/consultorio/{consultorioId}:
+  parameters:
+    - $ref: /parameters/consultorioId.yml
+  get:
+    operationId: KenduConsultorios.Consultorio.get
+    description: Obtiene la información de un consultorio
+    responses:
+      '200':
+        description: Información del consultorio
+        content:
+          application/json:
+            schema:
+              $ref: /entities/Consultorio.yml
+      '404':
+        $ref: /responses/404.NotFound.yml
+  put:
+    operationId: KenduConsultorios.Consultorio.put
+    description: Actualiza la información de un consultorio
+    requestBody:
+      description: Nueva información del consultorio
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: /entities/Consultorio.yml
+    responses:
+      '204':
+        $ref: /responses/204.NoContent.yml

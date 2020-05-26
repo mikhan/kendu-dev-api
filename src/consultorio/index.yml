@@ -1,0 +1,37 @@
+info:
+  version: '1.0.0'
+  title: Kendu Consultorios
+  description: Módulo de administración de consultorios
+  termsOfService: https://www.kendu.com/terminos
+  contact:
+    name: API Support
+    url: https://www.kendu.com/support
+    email: support@kendu.com
+security:
+  - JWT: []
+tags:
+  - name: Consultorio
+    description: Administración del consultorio
+servers:
+  - url: '{protocol}://{host}/api'
+    description: Servidor predeterminado
+    variables:
+      host:
+        default: localhost
+        description: Host
+      protocol:
+        enum:
+          - http
+          - https
+        default: https
+
+paths:
+  - $ref: paths/consultorios.yml
+  - $ref: paths/consultorio.yml
+
+components:
+  securitySchemes:
+    JWT:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

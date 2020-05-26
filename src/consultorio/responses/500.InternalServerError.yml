@@ -1,0 +1,5 @@
+description: Se ha generado un error en el sistema
+content:
+  application/problem+json:
+    schema:
+      $ref: '../schemas/Error.yml'

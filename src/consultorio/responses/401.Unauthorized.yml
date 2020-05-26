@@ -1,0 +1,11 @@
+description: El acceso al recurso es restringido
+headers:
+  WWW-Authenticate:
+    required: true
+    examples:
+      - Bearer
+      - Bearer, error="invalid_token", error_description="El token ha expirado"
+content:
+  application/problem+json:
+    schema:
+      $ref: '../schemas/Error.yml'

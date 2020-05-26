@@ -1,0 +1,6 @@
+orden:
+  in: query
+  name: sort
+  schema:
+    type: string
+  description: Orden de los resultados

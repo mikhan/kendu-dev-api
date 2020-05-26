@@ -1,0 +1,5 @@
+description: El método especificado no está habilitado para este recurso
+content:
+  application/problem+json:
+    schema:
+      $ref: '../schemas/Error.yml'

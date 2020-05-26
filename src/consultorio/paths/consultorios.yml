@@ -1,0 +1,13 @@
+/consultorios:
+  description: Obtener la lista de consultorios
+  get:
+    operationId: KenduConsultorios.Consultorios.get
+    tags:
+      - Consultorio
+    responses:
+      '200':
+        description: Lista de consultorios
+        content:
+          application/json:
+            schema:
+              $ref: /entities/Consultorios.yml
